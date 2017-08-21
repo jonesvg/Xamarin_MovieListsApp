@@ -9,7 +9,7 @@ namespace MoviesListProject.ViewModels
         /// <summary>
         /// Get the azure service instance
         /// </summary>
-        
+                
         bool isBusy = false;
         public bool IsBusy
         {

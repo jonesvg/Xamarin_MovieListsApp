@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
@@ -14,6 +15,8 @@ namespace TmdbServiceConnector
     {
         protected const string DefaultBaseUrl = "http://api.themoviedb.org";
 
+        public string language;
+
         public List<Genre> Genres;
 
         public Configuration config;
@@ -23,6 +26,7 @@ namespace TmdbServiceConnector
         public DataServiceConnector()
         {
             config = GetConfiguration().Body;
+            language = CultureInfo.CurrentUICulture.Name;
             Genres = new List<Genre>(GetGenreList().Body.Genres.ToList<Genre>());
         }
 
@@ -195,11 +199,11 @@ namespace TmdbServiceConnector
 
                 if (resource.Contains("?"))
                 {
-                    builder.AppendFormat("&api_key={0}", ApiKey);
+                    builder.AppendFormat("&language={1}&api_key={0}", ApiKey, language);
                 }
                 else
                 {
-                    builder.AppendFormat("?api_key={0}", ApiKey);
+                    builder.AppendFormat("?language={1}&api_key={0}", ApiKey, language);
                 }
 
                 string url = builder.ToString();
