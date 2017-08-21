@@ -22319,16 +22319,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\MoviesListProject\\MoviesListProject\\MoviesListProject.UWP\\MoviesListProject.UWP.csproj",
+      "projectUniqueName": "D:\\Xamarin_MovieListsApp\\MoviesListProject\\MoviesListProject.UWP\\MoviesListProject.UWP.csproj",
       "projectName": "MoviesListProject.UWP",
-      "projectPath": "D:\\MoviesListProject\\MoviesListProject\\MoviesListProject.UWP\\MoviesListProject.UWP.csproj",
-      "projectJsonPath": "D:\\MoviesListProject\\MoviesListProject\\MoviesListProject.UWP\\project.json",
+      "projectPath": "D:\\Xamarin_MovieListsApp\\MoviesListProject\\MoviesListProject.UWP\\MoviesListProject.UWP.csproj",
+      "projectJsonPath": "D:\\Xamarin_MovieListsApp\\MoviesListProject\\MoviesListProject.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "D:\\MoviesListProject\\MoviesListProject\\MoviesListProject\\MoviesListProject.csproj": {
-              "projectPath": "D:\\MoviesListProject\\MoviesListProject\\MoviesListProject\\MoviesListProject.csproj"
+            "D:\\Xamarin_MovieListsApp\\MoviesListProject\\MoviesListProject\\MoviesListProject.csproj": {
+              "projectPath": "D:\\Xamarin_MovieListsApp\\MoviesListProject\\MoviesListProject\\MoviesListProject.csproj"
             }
           }
         }
