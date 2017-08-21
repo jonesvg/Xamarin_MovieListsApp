@@ -1,0 +1,15 @@
+D:\MoviesListProject\TmdbServiceConector\bin\Release\TmdbServiceConector.dll
+D:\MoviesListProject\TmdbServiceConector\bin\Release\TmdbServiceConector.pdb
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Newtonsoft.Json.dll
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Xamarin.Forms.Core.dll
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Xamarin.Forms.Platform.dll
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Xamarin.Forms.Xaml.dll
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Newtonsoft.Json.xml
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Xamarin.Forms.Core.pdb
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Xamarin.Forms.Core.xml
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Xamarin.Forms.Platform.pdb
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Xamarin.Forms.Xaml.pdb
+D:\MoviesListProject\TmdbServiceConector\bin\Release\Xamarin.Forms.Xaml.xml
+D:\MoviesListProject\TmdbServiceConector\obj\Release\TmdbServiceConnector.csprojResolveAssemblyReference.cache
+D:\MoviesListProject\TmdbServiceConector\obj\Release\TmdbServiceConector.dll
+D:\MoviesListProject\TmdbServiceConector\obj\Release\TmdbServiceConector.pdb
