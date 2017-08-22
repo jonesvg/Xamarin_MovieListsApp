@@ -6,3 +6,5 @@ NewtonSoft to Json serialization and Xamarin Forms
 
 
 The content language working with the Current Culture of the mobile phone!
+
+No more considerations!
