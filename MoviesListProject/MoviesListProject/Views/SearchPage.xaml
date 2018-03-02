@@ -10,9 +10,10 @@
     <ContentPage.Content>
         <StackLayout>
             <SearchBar x:Name="srcBar"
-                       Text=""
+                       Text="{Binding SearchText, Mode=TwoWay}"
                        Placeholder="Movie name"
-                       SearchButtonPressed="srcBar_SearchButtonPressed" />
+                       SearchCommand="{Binding SearchCommand}"
+                        />
             <ListView x:Name="SearchListView"
                       ItemsSource="{Binding Movies, Mode=TwoWay}"
                       VerticalOptions="FillAndExpand"
@@ -20,7 +21,7 @@
                       IsPullToRefreshEnabled="true"
                       IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
                       CachingStrategy="RecycleElement"
-                      ItemSelected="SearchListView_ItemSelected">
+                      SelectedItem="{Binding SelectedItem}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -45,9 +46,9 @@
                 </ListView.ItemTemplate>
             </ListView>
             <StackLayout Orientation="Horizontal">
-                <Button Clicked="Button_Back"
+                <Button Command="{Binding BackCommand}"
                         Text="Back Page" />
-                <Button Clicked="Button_Next"
+                <Button Command="{Binding NextCommand}"
                         Text="Next Page" />
             </StackLayout>
         </StackLayout>

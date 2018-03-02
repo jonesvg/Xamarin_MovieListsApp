@@ -38,9 +38,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\AsyncCommand.cs" />
+    <Compile Include="Helpers\CommandExtension.cs" />
+    <Compile Include="Helpers\DelegateExtensions.cs" />
+    <Compile Include="Helpers\ICommandEx.cs" />
+    <Compile Include="Helpers\IViewModel.cs" />
     <Compile Include="Helpers\MessengingCenterAlert.cs" />
     <Compile Include="Helpers\ObservableObject.cs" />
     <Compile Include="Helpers\ObservableRangeCollection.cs" />
+    <Compile Include="Helpers\PageStep.cs" />
+    <Compile Include="Helpers\PropertyChangedNotifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
