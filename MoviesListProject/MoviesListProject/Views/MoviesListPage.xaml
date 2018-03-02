@@ -15,7 +15,7 @@
                       IsPullToRefreshEnabled="true"
                       IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                       CachingStrategy="RecycleElement"
-                      ItemSelected="MoviesListView_ItemSelected">
+                      SelectedItem="{Binding SelectedItem}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -39,10 +39,10 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <StackLayout Orientation="Horizontal">                
-                <Button Clicked="Button_Back"
+            <StackLayout Orientation="Horizontal">
+                <Button Command="{Binding BackCommand}"
                         Text="Back Page" />
-                <Button Clicked="Button_Next"
+                <Button Command="{Binding NextCommand}"
                         Text="Next Page" />
             </StackLayout>
         </StackLayout>

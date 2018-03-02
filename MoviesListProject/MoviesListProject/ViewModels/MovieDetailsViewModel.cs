@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MoviesListProject.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +9,17 @@ using TmdbServiceConnector.Models;
 namespace MoviesListProject.ViewModels
 {
     public class MovieDetailsViewModel : BaseViewModel
-    {
+    {        
         public Movie movie { get; set; }
         public string MoviePrincipalGenre { get; set; }
         public string OriginalTitle { get; set; }
+
+        
         public MovieDetailsViewModel(Movie _movie)
         {
             movie = _movie;
             Title = movie.Title;
-            MoviePrincipalGenre = movie.Genres == null ? string.Empty : GetGenres();
-
+            MoviePrincipalGenre = movie.Genres == null ? string.Empty : GetGenres();              
         }
 
         public string GetGenres()

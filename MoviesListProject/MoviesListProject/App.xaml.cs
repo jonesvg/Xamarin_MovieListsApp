@@ -10,6 +10,7 @@ namespace MoviesListProject
     {
 
         public static DataServiceConnector service;
+        public static INavigation navigator;
 
         public App()
         {
@@ -21,6 +22,8 @@ namespace MoviesListProject
         public static void SetMainPage()
         {
             service = new DataServiceConnector();
+            
+
             Current.MainPage = new TabbedPage
             {
                 Children =
